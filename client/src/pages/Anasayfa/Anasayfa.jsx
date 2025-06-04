@@ -537,8 +537,12 @@ const Anasayfa = () => {
               </a>
               <p>Psikolojik Danışman {counselorName} | İçsel yolculuğunuzda size rehberlik etmek için buradayım. Gelecek hayal etmekle başlar...</p>
               <div className="footer-socials">
-                 <a href="https://www.instagram.com/danismapsikolojisi" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram /></a>
-                 <a href="https://www.linkedin.com/in/kerem-karag%C3%B6z-463951181/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><Linkedin /></a>
+                <a href="https://www.instagram.com/danismapsikolojisi" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <img width="30" height="30" src="https://img.icons8.com/3d-fluency/100/instagram-new.png" alt="instagram-new"/>
+                </a>
+                <a href="https://www.linkedin.com/in/kerem-karag%C3%B6z-463951181/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <img width="30" height="30" src="https://img.icons8.com/3d-fluency/94/linkedin--v2.png" alt="linkedin--v2"/>
+                </a>
               </div>
             </div>
             <div className="footer-section links">
