@@ -1,0 +1,30 @@
+# Node.js genel
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.env
+.env.*  # Her iki taraf için, özel ortam değişkenleri
+
+# MacOS / Linux / Windows sistem dosyaları
+.DS_Store
+Thumbs.db
+
+# Vite build çıktısı
+dist/
+.vite/
+
+# Vite cache
+.cache/
+*.tsbuildinfo
+
+# client özel
+client/node_modules/
+client/dist/
+client/.env
+
+# server özel
+server/node_modules/
+server/dist/
+server/.env
