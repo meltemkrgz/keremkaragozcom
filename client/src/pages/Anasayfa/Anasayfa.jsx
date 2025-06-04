@@ -380,31 +380,6 @@ const Anasayfa = () => {
           </div>
         </div>
       </section>
-      
-      <section id="hakkimda" ref={setSectionRef('hakkimda')} className="about-short-section">
-        <div className="container">
-            <AnimatedSection className="section-header">
-                <h2>{counselorName} Kimdir?</h2>
-                <p className="subtitle">Eğitimim, deneyimlerim ve psikolojiye olan tutkum.</p>
-            </AnimatedSection>
-            <AnimatedSection className="about-short-text" animationClass="animate-slideInRight">
-                <h3>Merhaba, Ben Kerem Karagöz</h3>
-                <p>
-                    Yıldız Teknik Üniversitesi Psikolojik Danışmanlık ve Rehberlik bölümünden mezun oldum ve aynı üniversitede yüksek lisans eğitimime devam etmekteyim. İnsanın karmaşık iç dünyasına duyduğum derin merak ve yardım etme isteğiyle bu anlamlı yolculuğa çıktım.
-                </p>
-                <p>
-                    Kariyerim boyunca okul psikolojik danışmanlığı, özel eğitim, askeri birliklerde rehberlik ve danışma merkezi amirliği gibi çeşitli alanlarda deneyim kazandım. 2022 yılından beri Hendek, Sakarya'da kendi kurduğum {clinicName}'nde danışanlarıma hizmet vermekteyim.
-                </p>
-                 <p>
-                    <strong>Aldığım Bazı Uzmanlık Eğitimleri:</strong> EMDR Terapisi (2. Düzey), Aile ve Çift Danışmanlığı (MEB Onaylı), Attentioner Dikkat Programı Uygulayıcılığı, MOXO Dikkat Testi Uygulayıcılığı.
-                </p>
-                <a href="#iletisim" className="btn btn-outline" onClick={(e) => scrollToSection(e, 'iletisim')}>
-                    Daha Fazla Bilgi İçin Ulaşın
-                    <ChevronRight size={18}/>
-                </a>
-            </AnimatedSection>
-        </div>
-      </section>
 
       <section id="hizmetlerim" ref={setSectionRef('hizmetlerim')} className="services-preview">
         <div className="container">
@@ -415,10 +390,9 @@ const Anasayfa = () => {
           <AnimatedSection>
             <div className="services-grid">
               {[
-                { id: "bireysel-terapi", title: "Bireysel Danışmanlık", desc: "Kaygı, depresyon, stres, travma, fobi, yas, özgüven sorunları ve kişisel gelişim hedefleriniz için birebir destek.", icon: <UserCheck size={32}/>, image: "https://images.unsplash.com/photo-1484515991647-c5760fcecfc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBzeWNob2xvZ3l8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"},
-                { id: "emdr-terapisi", title: "EMDR Terapisi", desc: "Travmatik yaşantıların (TSSB), fobilerin, kaygı bozukluklarının ve olumsuz yaşam deneyimlerinin etkilerini azaltmaya yönelik bilimsel bir yöntem.", icon: <Eye size={32}/>, image: "https://images.unsplash.com/photo-1604881988758-f76ad2f78c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZW1kciUyMHRoZXJhcHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"},
-                { id: "aile-cift-terapisi", title: "Aile ve Çift Danışmanlığı", desc: "İlişkilerdeki iletişim sorunları, çatışmalar, uyum problemleri ve boşanma süreçleri gibi konularda destek.", icon: <Users2 size={32}/>, image: "https://images.unsplash.com/photo-1543269705-75c663507951?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y291cGxlJTIwdGhlcmFweXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"},
-                { id: "attentioner-moxo", title: "Dikkat Programları ve Testleri", desc: "Çocuk ve ergenlerde dikkat eksikliği ve hiperaktivite (DEHB) belirtilerine yönelik Attentioner programı ve MOXO dikkat testi uygulaması.", icon: <Target size={32}/>, image: "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGF0dGVudGlvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"}
+                { id: "bireysel-terapi", title: "Bireysel Danışmanlık", desc: "Kaygı, depresyon, stres, travma, fobi, yas, özgüven sorunları ve kişisel gelişim hedefleriniz için birebir destek.", icon: <UserCheck size={32}/>, image: "https://www.kucukagacpsikoloji.com/yuklemeler/bireysel-psikoloji2.jpg"},
+                { id: "emdr-terapisi", title: "EMDR Terapisi", desc: "Travmatik yaşantıların (TSSB), fobilerin, kaygı bozukluklarının ve olumsuz yaşam deneyimlerinin etkilerini azaltmaya yönelik bilimsel bir yöntem.", icon: <Eye size={32}/>, image: "https://www.psikoaktif.com/wp-content/uploads/2018/03/emdr-definition.jpg"},
+                { id: "aile-cift-terapisi", title: "Aile ve Çift Danışmanlığı", desc: "İlişkilerdeki iletişim sorunları, çatışmalar, uyum problemleri ve boşanma süreçleri gibi konularda destek.", icon: <Users2 size={32}/>, image: "https://mahmudtas.com/wp-content/uploads/2024/02/Cift-Terapisi-Hizmeti-Mahmud-TAS-scaled.jpg"},
               ].map((service, index) => (
                 <div className={`service-card ${index === 1 ? 'delay-1' : index === 2 ? 'delay-2' : index === 3 ? 'delay-3' : ''}`} key={service.id}>
                   <div className="service-image-container">
@@ -448,14 +422,14 @@ const Anasayfa = () => {
         <div className="container">
           <AnimatedSection className="section-header">
             <h2>Danışan Deneyimleri</h2>
-            <p className="subtitle">Paylaşılan geri bildirimler (Gizlilik esastır, isimler temsilidir).</p>
+            <p className="subtitle">Paylaşılan geri bildirimler (Google yorumlar).</p>
           </AnimatedSection>
           <AnimatedSection>
             <div className="testimonials-grid">
               {[
-                { name: "A. Y.", text: "Kerem Bey ile EMDR terapisi sayesinde yıllardır taşıdığım yüklerden kurtuldum. Kendimi hiç olmadığım kadar hafif ve özgür hissediyorum. Minnettarım.", avatar: "https://randomuser.me/api/portraits/women/44.jpg" },
-                { name: "M. K. & E. K.", text: "Evliliğimizde yaşadığımız sorunlar için çift danışmanlığı aldık. Kerem Bey'in rehberliğinde birbirimizi yeniden anlamayı öğrendik. Teşekkür ederiz.", avatar: "https://randomuser.me/api/portraits/men/32.jpg" },
-                { name: "Z. T. (Veli)", text: "Oğlumun dikkat sorunları için Attentioner programına katıldık. Okul başarısında ve odaklanmasında gözle görülür bir artış oldu. Emeğiniz için teşekkürler.", avatar: "https://randomuser.me/api/portraits/women/33.jpg" }
+                { name: "O. H.", text: "Kendinizi ve duygularınızı önemseyin çünkü herkesin daha iyi hissetmeye hakkı vardır. Kerem Hocam her şey için çok teşekkür ederim", avatar: "https://lh3.googleusercontent.com/a-/ALV-UjUjakVIqbQ5cdbzR37W_266J_lmuL6_ZqYNQxeNmsb51OmhC6nP=w108-h108-p-rp-mo-br100" },
+                { name: "M. U.", text: "En önemli özelliği empati yeteneği herkes kendini kolay kolay başkasının yerine koyamaz olaylara farklı bakış açısıyla insanın ufkunu genişletiyor yollarımız kesiştiği için çok mutluyum teşekkürler yolun açık olsun", avatar: "https://lh3.googleusercontent.com/a/ACg8ocLJa_pe8YZgq4CMCzeU429LNhb4Pkg_6kN0C_YlJTYdgcb15A=w108-h108-p-rp-mo-br100" },
+                { name: "H. E.", text: "Genç yaşında bu kadar donanımlı Mesleğiyle içli dışlı olan bir Danışman kesinlikle tavsiye edin ettirin", avatar: "https://lh3.googleusercontent.com/a/ACg8ocIAx9pCKzcSVlurTNcHd-anuNgMT3Y9CmR0Ri-9ee9TjDm4oA=w108-h108-p-rp-mo-br100" }
               ].map((testimonial, index) => (
                 <div className={`testimonial-card ${index === 1 ? 'delay-1' : index === 2 ? 'delay-2' : ''}`} key={index}>
                   <div className="testimonial-card-header">
@@ -478,47 +452,11 @@ const Anasayfa = () => {
         </div>
       </section>
 
-       {/* 
-       <section id="blog" ref={setSectionRef('blog')} className="blog-preview-section">
-        <div className="container">
-          <AnimatedSection className="section-header">
-            <h2>Güncel Yazılarım</h2>
-            <p className="subtitle">Psikoloji, kişisel gelişim ve ruh sağlığı üzerine.</p>
-          </AnimatedSection>
-          <AnimatedSection>
-            <div className="blog-preview-grid">
-              {blogPostsData.map((post, index) => (
-                <div key={post.id} className={`blog-post-card ${index === 1 ? 'delay-1' : index === 2 ? 'delay-2' : ''}`}>
-                  <a href="#" className="blog-post-image-link" onClick={(e) => e.preventDefault()}>
-                    <img src={post.image} alt={post.title} className="blog-post-image" loading="lazy"/>
-                    <span className="blog-post-category">{post.category}</span>
-                  </a>
-                  <div className="blog-post-content">
-                    <span className="blog-post-date">{post.date}</span>
-                    <h3 className="blog-post-title">
-                      <a href="#" onClick={(e) => e.preventDefault()}>{post.title}</a>
-                    </h3>
-                    <p className="blog-post-excerpt">{post.excerpt}</p>
-                    <a href="#" className="btn btn-text" onClick={(e) => e.preventDefault()}>
-                      Devamını Oku <ArrowRight size={16} />
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </AnimatedSection>
-          <AnimatedSection className="text-center mt-4">
-            <a href="#" className="btn btn-primary-outline" onClick={(e) => e.preventDefault()}>Tüm Yazıları Gör</a>
-          </AnimatedSection>
-        </div>
-      </section>
-      */}
-
       <section id="iletisim" ref={setSectionRef('iletisim')} className="contact-preview">
         <div className="container">
         <AnimatedSection className="section-header">
             <h2>İletişime Geçin</h2>
-            <p className="subtitle">Randevu almak, soru sormak veya bilgi almak için buradayım.</p>
+            <p className="subtitle">Randevu almak, soru sormak veya bilgi almak için formu doldurunuz.</p>
         </AnimatedSection>
           <AnimatedSection>
             <div className="contact-content">
@@ -540,8 +478,12 @@ const Anasayfa = () => {
                   </a>
                 </div>
                 <div className="social-links">
-                    <a href="https://www.instagram.com/danismapsikolojisi" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram /></a>
-                    <a href="https://www.linkedin.com/in/kerem-karag%C3%B6z-463951181/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><Linkedin /></a>
+                    <a href="https://www.instagram.com/danismapsikolojisi" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                      <img width="30" height="30" src="https://img.icons8.com/3d-fluency/100/instagram-new.png" alt="instagram-new"/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kerem-karag%C3%B6z-463951181/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                      <img width="30" height="30" src="https://img.icons8.com/3d-fluency/94/linkedin--v2.png" alt="linkedin--v2"/>
+                    </a>
                 </div>
               </div>
               <div className="contact-form-wrapper animate-slideInRight delay-1">
@@ -566,7 +508,7 @@ const Anasayfa = () => {
                         <option value="Bireysel Danışmanlık Randevusu">Bireysel Danışmanlık Randevusu</option>
                         <option value="EMDR Terapisi Randevusu">EMDR Terapisi Randevusu</option>
                         <option value="Aile ve Çift Danışmanlığı Randevusu">Aile ve Çift Danışmanlığı Randevusu</option>
-                        <option value="Attentioner / MOXO Bilgi">Attentioner / MOXO Bilgi</option>
+                        <option value="Attentioner / MOXO Bilgi">Attentioner / MOXO Randevusu</option>
                         <option value="Genel Bilgi Alma">Genel Bilgi Alma</option>
                         <option value="Diğer">Diğer</option>
                     </select>
@@ -576,7 +518,7 @@ const Anasayfa = () => {
                     <textarea id="message" name="message" placeholder="Kısaca mesajınızı veya sorunuzu buraya yazabilirsiniz..." rows={5} required aria-required="true"></textarea>
                   </div>
                   <button type="submit" className="submit-btn btn btn-primary">
-                    Mesajı Gönder <ArrowRight size={18} />
+                    Formu Gönder <ArrowRight size={18} />
                   </button>
                 </form>
               </div>
@@ -590,7 +532,7 @@ const Anasayfa = () => {
           <div className="footer-content">
             <div className="footer-section about">
               <a href="#anasayfa" className="footer-logo" onClick={(e) => scrollToSection(e, 'anasayfa')}>
-                <img src="/logo.png" alt={`${clinicName} logo footer`} style={{width: '28px', height: 'auto', filter: 'brightness(0) invert(1)'}} /> {/* Simple inline style for white logo in dark footer */}
+                <img src="/logo.png" alt={`${clinicName} logo footer`} style={{width: '28px', height: 'auto'}} /> {/* Simple inline style for white logo in dark footer */}
                 <span>{clinicName}</span>
               </a>
               <p>Psikolojik Danışman {counselorName} | İçsel yolculuğunuzda size rehberlik etmek için buradayım. Gelecek hayal etmekle başlar...</p>

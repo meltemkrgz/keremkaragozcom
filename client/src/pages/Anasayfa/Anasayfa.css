@@ -1201,15 +1201,12 @@ section {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: var(--white);
   text-decoration: none;
 }
-/* Footer logo image color is handled by inline style: filter: brightness(0) invert(1) in JSX */
-/*
-.footer-logo .logo-icon {
-  color: var(--accent-primary);
+
+.footer-logo span:hover{
+  color: #ffffff;
 }
-*/
 
 .footer-section p, .footer-section address {
   color: var(--bg-accent); /* Çok Açık Yeşil metin */
@@ -1275,7 +1272,7 @@ section {
     margin-bottom: 0.6rem;
 }
 .footer-contact-info-footer p a {
-    color: var(--bg-accent); /* Çok Açık Yeşil */
+    color: #000000; /* Çok Açık Yeşil */
 }
 .footer-contact-info-footer p a:hover {
     color: var(--accent-primary); /* Ana Yeşil hover */
