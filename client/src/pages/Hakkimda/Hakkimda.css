@@ -1171,13 +1171,15 @@ section {
 }
 
 .hakkimda-profile-img {
-  width: 200px; 
-  height: 200px; 
+  width: 200px;
+  height: 200px;
   border-radius: 50%; 
   object-fit: cover; 
   margin: 0 auto 2rem; 
   border: 5px solid var(--accent-primary);
   box-shadow: var(--shadow-xl); 
+  object-fit: cover;
+  object-position: top;
 }
 
 .hakkimda-main-title {
